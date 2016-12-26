@@ -1,6 +1,6 @@
 const SerialPort = require('serialport')
 
-const port = new SerialPort('/dev/cu.usbmodem1411', {
+const port = new SerialPort('/dev/ttyACM0', {
   baudRate: 9600,
   parser: SerialPort.parsers.readline('\r')
 })
