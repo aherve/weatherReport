@@ -2,3 +2,4 @@
 secret.env
 data
 ./data/*
+node_modules
