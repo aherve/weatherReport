@@ -17,11 +17,11 @@ void loop() {
   float t = dht.readTemperature();
 
   if (isnan(h) || isnan(t) ) {
-    Serial.println("ERROR: failed to read sensors !");
     return;
   }
 
   Serial.print(h);
   Serial.print('\t');
   Serial.println(t);
+  delay(1000L * 60L * 10L); // 10 mn
 }
