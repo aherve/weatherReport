@@ -2,14 +2,15 @@
   "name": "weatherReport",
   "version": "1.0.0",
   "description": "arduino-raspberry-playground-project",
-  "main": "src/logger.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node ./src/logger.js",
+    "start": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aurélien Hervé",
   "license": "ISC",
   "dependencies": {
+    "mongodb": "^2.2.16",
     "serialport": "^4.0.7"
   }
 }

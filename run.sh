@@ -1,1 +1,1 @@
-docker build -t ttest . && docker run -it --device=/dev/ttyACM0 ttest
+docker build -t weatherreport . && docker run -it -d --device=/dev/ttyACM0 --env-file secret.env weatherreport

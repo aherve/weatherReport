@@ -1,5 +1,5 @@
-FROM armhf/node:6.7-slim
-#FROM node
+#FROM armhf/node:6.7-slim
+FROM node
 RUN mkdir /app
 WORKDIR /app
 
