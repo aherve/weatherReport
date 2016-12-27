@@ -1,2 +1,4 @@
 *.swp
 secret.env
+data
+./data/*
