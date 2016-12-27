@@ -1,8 +1,24 @@
 extends layout
 
 block content
-  h1 Home Weather Report
+  h1.text-center Home Weather Report
   div#temp
   div#hum
+
+  .row
+    .col-md-12
+      h2 Setup:
+      ul
+        li arduino measures the temperature and humidity every 10mns
+        li raspberry listens to serial port and export data to a mongodb database
+        li simple express app serves what you're actually reading (deployed on heroku)
+  .row.text-center
+    .col-md-12
+      img(src='/images/setup.jpg' style='max-height:300px')
+  .row
+    .col-md-12
+      a(href='https://github.com/aherve/weatherReport') source code here.
+      p disclaimer : this is an absolute arduino/raspberry beginner project.
+
 
   script(src='javascripts/draw.js')
