@@ -71,7 +71,7 @@ $.ajax({url: '/data', success: function (rawData) {
       borderWidth: 0
     },
     series: [{
-      name: 'Temperature',
+      name: 'Humidity',
       data: humidity
     }]
   });
